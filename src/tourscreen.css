@@ -1,0 +1,290 @@
+
+
+.mybutton{
+  padding-left : 50px;
+  padding-right : 50px ;
+  z-index: 3;
+}
+
+.mybutton:hover{
+    
+    transition-duration: 0.5s;
+    transform: scale(0.94);
+    border-right: 3px solid purple;
+    
+    
+}
+
+.mycardcopy {
+   box-shadow: 20px;
+   background-color: red;
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+.mysection{
+  z-index:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.myfont{
+    font-family:'DM Sans', sans-serif;
+}
+
+.fa-play:before {
+    margin-left: .3rem;
+  }
+
+  /* Steps */
+  .step {
+    list-style: none;
+    margin: 0;
+  }
+
+  .step-element {
+    display: flex;
+    padding: 1rem 0;
+  }
+
+  .step-number {
+    position: relative;
+    width: 7rem;
+    flex-shrink: 0;
+    text-align: center;
+  }
+
+  .step-number .number {
+    color: #bfc5ca;
+    background-color: #eaeff4;
+    font-size: 1.5rem;
+  }
+
+  .step-number .number {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+  }
+
+  .number {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    border-radius: 10rem;
+  }
+
+  .step-number::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 48px;
+    bottom: -2rem;
+    margin-left: -1px;
+    border-left: 2px dashed #eaeff4;
+  }
+
+  .step .step-element:last-child .step-number::before {
+    bottom: 1rem;
+  }
+
+
+
+  
+
+  .timeline {
+    position: relative;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    margin-left: -1px;
+    background-color: #50a1ff;
+  }
+
+  .timeline-element {
+    position: relative;
+    width: 50%;
+    padding: 1rem 0;
+    padding-right: 2.5rem;
+    text-align: right;
+  }
+
+  .timeline-element::before {
+    content: '';
+    position: absolute;
+    right: -8px;
+    top: 1.35rem;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #50a1ff;
+    background-color: #fff;
+  }
+
+  .timeline-element:nth-child(even)::before {
+    right: auto;
+    left: -8px;
+  }
+
+  .timeline-element:nth-child(even) {
+    margin-left: 50%;
+    padding-left: 2.5rem;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  @media (max-width: 767.98px) {
+    .timeline::before {
+      left: 8px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .timeline-element {
+      width: 100%;
+      text-align: left;
+      padding-left: 2.5rem;
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .timeline-element::before {
+      top: 1.25rem;
+      left: 1px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .timeline-element:nth-child(even) {
+      margin-left: 0rem;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .timeline-element {
+      width: 100%;
+      text-align: left;
+      padding-left: 2.5rem;
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .timeline-element:nth-child(even)::before {
+      left: 1px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .timeline-element::before {
+      top: 1.25rem;
+    }
+  }
+
+  .d-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+    grid-gap: 7px;
+  }
+
+  .item {
+    position: relative;
+  }
+
+  .item:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+  }
+
+  .item:nth-child(2) {
+    grid-column: 2;
+    grid-row: 0 / 3;
+  }
+
+  .item:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2 / 3;
+  }
+
+  .item:nth-child(4) {
+    grid-column: 2;
+    grid-row: 3 / 3;
+  }
+
+  .item a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }

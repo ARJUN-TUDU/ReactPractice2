@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+
+.mysection{
+   
+    
+    height:70vh;
+    display:grid;
+    place-items: center;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.myfonts{
+    font-family: 'Pattaya', sans-serif;
+    font-size:90px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 41px;
+  }
+  h2 {
+    font-size: 33px;
+  }
+  h3 {
+    font-size: 20px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 33px;
   }
-  to {
-    transform: rotate(360deg);
+  h2 {
+    font-size: 20px;
   }
+  h3 {
+    font-size: 16px;
+  }
+} 
+
+
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  .left{
+    position: absolute;
+    top:150px;
+    left:30%;
+  }
+  
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
+.myfont{
+    font-family:'DM Sans', sans-serif;
 }
