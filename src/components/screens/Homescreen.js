@@ -7,6 +7,9 @@ import Tours from '../Tours';
 const Homescreen = () => {
     return (
         <div>
+         
+
+            <Container>
             <Row>
               {tours.map(tours =>(
                   <Col xs={12}  lg={3} >
@@ -16,6 +19,7 @@ const Homescreen = () => {
 
 
             </Row>
+            </Container>
         </div>
     )
 }

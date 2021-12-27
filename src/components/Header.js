@@ -1,10 +1,11 @@
 import React from 'react'
-import { Container,Navbar,Nav ,Row ,Col } from 'react-bootstrap';
+import { Container,Navbar,Nav ,Row ,Col , Carousel } from 'react-bootstrap';
 import "../App.css";
+import tours from '../tours';
 const Header = () => {
     return (
         <div>
-        <Navbar className="bg-primary" variant="light"  expand="lg">
+        <Navbar className="bg-primary transparent"  style = {{opacity:'0.699'}}variant="light"  expand="lg">
             <Container className="p-4">
             <Navbar.Brand className='text-white' href="/">Rastafari</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -17,13 +18,21 @@ const Header = () => {
             </Container>
         </Navbar>
 
-         <Container className="mysection" >
-             
-                 <h1 style={{fontSize:'100px'}}>RastFaari</h1>
-                 
-                
-                
-         </Container>
+        <Carousel>
+                                <Carousel.Item style={{height:"300px", opacity:''}}>
+                                    <img
+                                    className="d-block w-100"
+                                    src="https://trek.scene7.com/is/image/TrekBicycleProducts/Supercaliber_Marquee_6?wid=1200"
+                                    alt="First slide" fluid
+                                    />
+                                    <Carousel.Caption>
+                                    <h3 className = "mytext" style ={{fontSize:"50px", color:'white'}}>First slide label</h3>
+                                    
+                                    </Carousel.Caption>
+                                </Carousel.Item>
+                               
+                               
+                                </Carousel>
 
         </div>
     )

@@ -18,14 +18,6 @@ function App() {
       <Header/>
     </header>
 
-
-
-  
-
-    
-    
-
-    
     <Container className=" p-5 rounded   " >
          <Route path = "/" component={Homescreen} exact className="p-5"/>
          <Route path = "/tour/:id" component={TourScreen}/>

@@ -5,7 +5,7 @@ import BlogCards from '../BlogCards';
 
 const BlogScreen = () => {
     return (
-            <Container>
+            <Container className = "">
                 <Row>
                 {blogs.map(blogs=>(
                     <Col key={blogs._id}>

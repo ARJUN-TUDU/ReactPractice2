@@ -21,6 +21,10 @@
 }
 
 
+.step-excerpt{
+   width:480px;
+}
+
 .container {
   position: relative;
   text-align: center;

@@ -18,6 +18,10 @@
     font-size:90px;
 }
 
+
+.mytext {
+  font-family: 'Anton', sans-serif; 
+}
 @media screen and (max-width: 960px) {
   h1 {
     font-size: 41px;
