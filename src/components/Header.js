@@ -26,7 +26,7 @@ const Header = () => {
                                     alt="First slide" fluid
                                     />
                                     <Carousel.Caption>
-                                    <h3 className = "mytext" style ={{fontSize:"50px", color:'white'}}>First slide label</h3>
+                                    <h3 className = "mytext" style ={{fontSize:"50px", color:'white'}}> The Place</h3>
                                     
                                     </Carousel.Caption>
                                 </Carousel.Item>
